@@ -231,6 +231,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 397093009}
+  - component: {fileID: 397093010}
   m_Layer: 0
   m_Name: Focal Point
   m_TagString: Untagged
@@ -254,6 +255,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &397093010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 397093008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7941a38f11b4b4c7c84e99781604de90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 30
 --- !u!1 &534593504
 GameObject:
   m_ObjectHideFlags: 0
@@ -263,6 +277,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 534593505}
+  - component: {fileID: 534593506}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -285,6 +300,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &534593506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534593504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a6260b3449894fc5bec58a178645aa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerScale: {x: 1.25, y: 1.25, z: 1.25}
+  playerMass: 10
+  playerDrag: 0.2
+  playerMoveForce: 15
+  playerRepelForce: 0.75
+  playerBounce: 0
+  waypoints: []
+  debugSpawnWaves: 0
+  debugSpawnPortal: 0
+  debugSpawnPowerUp: 0
+  debugPowerUpRepel: 0
 --- !u!1 &699532169
 GameObject:
   m_ObjectHideFlags: 0
@@ -298,6 +336,7 @@ GameObject:
   - component: {fileID: 699532172}
   - component: {fileID: 699532171}
   - component: {fileID: 699532170}
+  - component: {fileID: 699532175}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -454,6 +493,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &699532175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 699532169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab686e69e7c934cc893502d43b16d514, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1211016355
 GameObject:
   m_ObjectHideFlags: 0
